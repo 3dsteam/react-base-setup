@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Font awesome
+@import "@fortawesome/fontawesome-pro/css/all.min.css";
+
+// Primary color
+$primary: #096bec;
+
+// Syncfusion theme
+@import 'tailwind.scss';
+
+// Syncfusion
+@import '@syncfusion/ej2-base/styles/tailwind';
+@import '@syncfusion/ej2-buttons/styles/tailwind';
+@import '@syncfusion/ej2-popups/styles/tailwind';
+
+@import '@syncfusion/ej2-react-buttons/styles/tailwind';
+@import '@syncfusion/ej2-react-inputs/styles/tailwind';
+@import '@syncfusion/ej2-react-notifications/styles/tailwind';
+@import '@syncfusion/ej2-react-popups/styles/tailwind';
+@import "@syncfusion/ej2-navigations/styles/tailwind";
+
+// Auth container
+.auth-container {
+  min-height: calc(100% - 48px);
+}
+
+.fit-auth-container {
+  @apply absolute inset-0
+}
+
+// Sidebar
+.sidebar-button {
+  @apply w-full text-left p-2.5 h-10 #{!important}
+}
+
+.sidebar-button > .e-btn-icon {
+  @apply ml-2.5 #{!important}
+}
